@@ -1,0 +1,39 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm/
+
+# VSCode settings
+.vscode/
+
+# Debug files
+*.swp
+
+# Coverage reports
+coverage/
+
+# Frontend-specific
+public/qr.png
+*.png
