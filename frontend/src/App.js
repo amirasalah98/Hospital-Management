@@ -15,7 +15,7 @@ const App =()=>{
         <nav>
           <ul>
             <li>
-              <NavLink to="/appointment"
+              <NavLink to="/appointments"
                className={({isActive})=>(isActive? "active":"")}>
                 Appointments
                </NavLink>
@@ -40,6 +40,8 @@ const App =()=>{
         </nav>
       <Routes>
         <Route  path="/patients" element={<Patients />} />
+        <Route  path="/doctors" element={<Doctors />} />
+        <Route  path="/appointments" element={<Appointments />} />
       </Routes>
       </div>
     </Router>

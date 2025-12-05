@@ -68,6 +68,7 @@ const Patients=()=>{
         })
         setSelectedId(patient._id)
     }
+    
      const resetForm = () => {
     setSelectedId(null);
     setFormData({ name: "", age: "", gender: "" });
