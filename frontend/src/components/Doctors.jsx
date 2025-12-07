@@ -15,7 +15,7 @@ const Doctors =()=>{
                 const res= await axios.get("http://localhost:5000/doctors")
                 setDoctors(res.data)
             }catch(err){
-                console.err("Error fetching doctors",err)
+                console.error("Error fetching doctors",err)
             }
         }
         fetchDoctors()
@@ -59,7 +59,7 @@ const Doctors =()=>{
   const  handleDeleteDoctor=async(id)=>{
     try{
         await axios.delete(`http://localhost:5000/doctors/delete/${id}`)
-        setDoctors((prev)=>prev.filter((d)=>d._id!=id))
+        setDoctors((prev)=>prev.filter((d)=>d._id!==id))
          if (id === selectedId) resetForm();
         }catch(err){
  console.error("Error deleting doctor:", err);
