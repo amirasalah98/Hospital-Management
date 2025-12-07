@@ -37,7 +37,7 @@ const Doctors =()=>{
     const handleUpdateDoctors=async(e)=>{
          e.preventDefault()
          try{
-            const res= axios.post(`http://localhost:5000/doctors/update/${selectedId}`,formData)
+            await axios.post(`http://localhost:5000/doctors/update/${selectedId}`,formData)
             setDoctors((prev)=>
                 prev.map((d)=>
             d._id===selectedId ? {...formData, _id : selectedId}:d)
